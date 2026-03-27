@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eef2f5;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Навигационная ссылка "На главную" */
+.nav-bar {
+    margin-bottom: 1.5rem;
+}
+
+.nav-bar a {
+    color: #2c5f8a;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: white;
+    padding: 6px 14px;
+    border-radius: 30px;
+    border: 1px solid #cbd5e1;
+    transition: 0.1s;
+}
+
+.nav-bar a:hover {
+    background: #f1f5f9;
+}
+
+/* Инфобокс (аналог википедийной карточки) */
+.infobox {
+    width: 100%;
+    max-width: 360px;
+    float: right;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    font-size: 0.875rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.infobox-title {
+    background: #eaecf0;
+    text-align: center;
+    font-size: 1.35rem;
+    font-weight: 700;
+    padding: 10px 8px 6px;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+.infobox-subtitle {
+    background: #eaecf0;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 4px 8px 8px;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+.infobox-image {
+    text-align: center;
+    padding: 14px 8px 8px;
+    background: #fff;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.image-placeholder {
+    background: #e9ecef;
+    border: 1px solid #c8ccd1;
+    padding: 18px 8px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Сетка данных (две колонки) */
+.infobox-data-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #fff;
+}
+
+.grid-label {
+    font-weight: 700;
+    background-color: #f8f9fa;
+    padding: 8px 10px;
+    border-bottom: 1px solid #eaecf0;
+    border-right: 1px solid #eaecf0;
+}
+
+.grid-value {
+    background-color: #ffffff;
+    padding: 8px 10px;
+    border-bottom: 1px solid #eaecf0;
+}
+
+/* Полноширинная секция внутри сетки (например, "Убийства") */
+.full-width-section {
+    grid-column: 1 / -1;
+    background: #eaecf0;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+.badge-stat {
+    background: #e9ecef;
+    padding: 1px 5px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+
+/* Текст статьи (обтекает инфобокс) */
+.article-text {
+    overflow: hidden;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Адаптивность: на узких экранах инфобокс становится на всю ширину */
+@media (max-width: 700px) {
+    .infobox {
+        float: none;
+        margin: 0 0 1.5rem 0;
+        max-width: 100%;
+    }
+    body {
+        padding: 1rem;
+    }
+}
+
+hr {
+    margin: 1rem 0;
+    border: none;
+    border-top: 1px solid #e2e8f0;
+}

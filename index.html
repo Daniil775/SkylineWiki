@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Файлы Кирилла — главная</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #eef2f5;
+            font-family: 'Inter', sans-serif;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        .header p {
+            color: #475569;
+            margin-top: 0.5rem;
+        }
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.2s ease;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .card-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+            border-color: #cbd5e1;
+        }
+        .card-content {
+            padding: 1.5rem;
+        }
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 0.5rem;
+        }
+        .card-title i {
+            color: #2c5f8a;
+            font-size: 1.2rem;
+        }
+        .card-nick {
+            color: #475569;
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+            border-left: 3px solid #cbd5e1;
+            padding-left: 0.75rem;
+        }
+        .card-stats {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: #334155;
+        }
+        .card-stats span {
+            background: #f1f5f9;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+        }
+        hr {
+            margin: 1rem 0 0.5rem;
+            border: none;
+            border-top: 1px solid #e2e8f0;
+        }
+        .footer-note {
+            text-align: center;
+            margin-top: 3rem;
+            color: #5b6e8c;
+            font-size: 0.8rem;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1><i class="fas fa-archive"></i> Файлы Кирилла</h1>
+        <p>Энциклопедия вселенной Скайлайна • хроники сообщества SkylinePC</p>
+    </div>
+
+    <div class="cards-grid">
+        <!-- Карточка 1: Керил Скайланович (уже есть) -->
+        <a href="keril.html" class="card-link">
+            <div class="card-content">
+                <div class="card-title"><i class="fas fa-user-secret"></i> Керил Скайланович</div>
+                <div class="card-nick">«Пермский Чикатило»</div>
+                <p>Серийный убийца, действовавший в Перми в 2001–2002 годах.</p>
+                <div class="card-stats"><span>3 доказано</span><span>пожизненно</span></div>
+                <hr><div style="font-size:0.7rem;">р. 2 февраля 1983</div>
+            </div>
+        </a>
+
+        <!-- Карточка 2: Афера с компьютерами -->
+        <a href="skyline_pc_scam.html" class="card-link">
+            <div class="card-content">
+                <div class="card-title"><i class="fas fa-laptop"></i> «Скайлайн-сборка»</div>
+                <div class="card-nick">Афера с компьютерами</div>
+                <p>Продажа нерабочего хлама под видом мощных ПК.</p>
+                <div class="card-stats"><span>≈15 продаж</span><span>100% брак</span></div>
+                <hr><div style="font-size:0.7rem;">2019–2021</div>
+            </div>
+        </a>
+
+        <!-- Карточка 3: Угон R34 -->
+        <a href="skyline_r34_theft.html" class="card-link">
+            <div class="card-content">
+                <div class="card-title"><i class="fas fa-car"></i> Угон Skyline R34</div>
+                <div class="card-nick">«Мечта за рулём»</div>
+                <p>Кирилл угнал единственный в городе Nissan Skyline R34.</p>
+                <div class="card-stats"><span>похищено</span><span>2 недели в розыске</span></div>
+                <hr><div style="font-size:0.7rem;">июль 2022</div>
+            </div>
+        </a>
+
+        <!-- Карточка 4: Угнетение Максима -->
+        <a href="maxim_oppression.html" class="card-link">
+            <div class="card-content">
+                <div class="card-title"><i class="fas fa-user-slash"></i> Угнетение Максима</div>
+                <div class="card-nick">«Максик-лошик»</div>
+                <p>Травля участника, многократные баны и создание альтернативного чата.</p>
+                <div class="card-stats"><span>10+ банов</span><span>исход участников</span></div>
+                <hr><div style="font-size:0.7rem;">2020–2023</div>
+            </div>
+        </a>
+
+        <!-- Карточка 5: Диктатура в чате -->
+        <a href="dictatorship.html" class="card-link">
+            <div class="card-content">
+                <div class="card-title"><i class="fas fa-crown"></i> Диктатура в чате</div>
+                <div class="card-nick">«Один правит всем»</div>
+                <p>Авторитарный режим Кирилла в сообществе SkylinePC.</p>
+                <div class="card-stats"><span>50 участников</span><span>25 ботов</span></div>
+                <hr><div style="font-size:0.7rem;">с 2018</div>
+            </div>
+        </a>
+
+        <!-- Карточка 6: Разоблачители -->
+        <a href="exposers.html" class="card-link">
+            <div class="card-content">
+                <div class="card-title"><i class="fas fa-eye"></i> Разоблачители Скайлайна</div>
+                <div class="card-nick">Тайное общество</div>
+                <p>Анонимная группа, собирающая компромат на Кирилла.</p>
+                <div class="card-stats"><span>досье в сборе</span><span>готовят слив</span></div>
+                <hr><div style="font-size:0.7rem;">с 2022</div>
+            </div>
+        </a>
+
+        <!-- Карточка 7: Мем «5 кнопок» -->
+        <a href="five_buttons_meme.html" class="card-link">
+            <div class="card-content">
+                <div class="card-title"><i class="fas fa-tv"></i> Мем «5 кнопок»</div>
+                <div class="card-nick">Древний монитор с уникальным свойством</div>
+                <p>Кирилл продавал монитор и указал в плюсах «5 кнопок».</p>
+                <div class="card-stats"><span>вирусный мем</span><span>500+ смешных комментов</span></div>
+                <hr><div style="font-size:0.7rem;">февраль 2021</div>
+            </div>
+        </a>
+
+        <!-- Карточка 8: Дамир-подлиза -->
+        <a href="damir_sycophant.html" class="card-link">
+            <div class="card-content">
+                <div class="card-title"><i class="fas fa-hand-sparkles"></i> Дамир</div>
+                <div class="card-nick">Подлизускайлайна и дальний родственник</div>
+                <p>Главный лоялист, доносчик и защитник режима.</p>
+                <div class="card-stats"><span>шестёрка</span><span>множество доносов</span></div>
+                <hr><div style="font-size:0.7rem;">с 2020</div>
+            </div>
+        </a>
+
+        <!-- Карточка 9: Взрослость и фразочки -->
+        <a href="adulthood_phrases.html" class="card-link">
+            <div class="card-content">
+                <div class="card-title"><i class="fas fa-comment-dots"></i> «Я взрослый»</div>
+                <div class="card-nick">Скайлайн-фразочки и мания величия</div>
+                <p>Самопровозглашённая взрослость и коронные выражения.</p>
+                <div class="card-stats"><span>«ого»</span><span>«дожили»</span><span>«я взрослый»</span></div>
+                <hr><div style="font-size:0.7rem;">культовые цитаты</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="footer-note">
+        <i class="fas fa-plus-circle"></i> Чтобы добавить новую запись, создайте HTML-файл по шаблону и добавьте ссылку на главной.
+    </div>
+</div>
+</body>
+</html>
